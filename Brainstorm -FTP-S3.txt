@@ -1,0 +1,29 @@
+s3-FTP-Solution (https://github.com/kuberkaul/S3-FTP-Streaming)
+
+
+Amazon S3 doesn't expose an FTP interface for now. However there are number of commercial s3-rd party solutions that I found :
+
+1. You can use Amazon EC2 + TntDrive to set up an FTP server that uses S3 as a storage backend.
+
+2. You may take a look at SMEStorage, afaik they provide an s3-to-ftp solution.
+
+3. Create an ec2 instance and load FTP server and S3 programmatically into it.
+
+But FTP protocol is not supported natively by Amazon S3.
+
+
+
+
+Some helpful links!
+
+
+--> How to create a ftp server in linux : http://www.wikihow.com/Set-up-an-FTP-Server-in-Ubuntu-Linux
+
+--> creating ftp server using s3 as background : http://www.codeproject.com/Tips/546903/Amazon-AWS-EC2-FTP-server-using-S3-as-the-backend
+
+Set up ftp server on amzon aws : 
+
+1. http://lzw-programmingjourney.blogspot.com/2011/12/set-up-ftp-server-on-amazon-aws-ec2.html
+mounting s3 to ec2 : https://forums.aws.amazon.com/thread.jspa?threadID=39361
+
+2. http://sharadchhetri.com/2013/03/08/how-to-mount-s3-bucket-in-linux-ec2-instance/
